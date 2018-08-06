@@ -1,0 +1,8 @@
+/*
+|--------------------------------------------------------------------------
+| _ucCamel_casePlural_ Routes
+|--------------------------------------------------------------------------
+*/
+
+Route::resource('_lower_casePlural_', '_ucCamel_casePlural_Controller', [ 'except' => ['show'], 'as' => config('quarx.backend-route-prefix', 'quarx') ]);
+Route::post('_lower_casePlural_/search', '_ucCamel_casePlural_Controller@search');
